@@ -1,0 +1,175 @@
+import { StyleSheet } from 'react-native';
+
+export const getChatsListStyles = (theme: 'light' | 'dark') =>
+  StyleSheet.create({
+    centered: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: 20,
+      backgroundColor: theme === 'dark' ? '#121212' : '#FFF5F8',
+    },
+    container: {
+      flex: 1,
+      backgroundColor: theme === 'dark' ? '#121212' : '#FFF5F8',
+    },
+    header: {
+      paddingTop: 30,
+      paddingHorizontal: 20,
+      paddingBottom: 10,
+      alignItems: 'center',
+    },
+    headerTitle: {
+      fontSize: 28,
+      fontWeight: '700',
+      color: theme === 'dark' ? '#FFB6D9' : '#D6336C',
+      textAlign: 'center',
+      marginBottom: 8,
+      letterSpacing: 0.5,
+    },
+    headerSubtitle: {
+      fontSize: 14,
+      textAlign: 'center',
+      color: theme === 'dark' ? '#D4A5C0' : '#9E7B8E',
+      fontStyle: 'italic',
+    },
+    listContent: {
+      padding: 16,
+    },
+    chatItem: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      padding: 16,
+      borderRadius: 20,
+      marginBottom: 12,
+      backgroundColor: theme === 'dark' ? '#2A2335' : '#FFFFFF',
+      borderWidth: 1,
+      borderColor: theme === 'dark' ? '#3D3147' : '#FFE4ED',
+    },
+    avatarContainer: {
+      marginRight: 16,
+    },
+    avatar: {
+      width: 56,
+      height: 56,
+      borderRadius: 28,
+      borderWidth: 2,
+      borderColor: theme === 'dark' ? '#B794F6' : '#FFB6D9',
+    },
+    chatInfo: {
+      flex: 1,
+    },
+    chatName: {
+      fontSize: 17,
+      fontWeight: '600',
+      marginBottom: 6,
+      color: theme === 'dark' ? '#FFB6D9' : '#C62368',
+    },
+    lastMessage: {
+      fontSize: 14,
+      color: theme === 'dark' ? '#D4A5C0' : '#6B5B62',
+      lineHeight: 18,
+    },
+    timeContainer: {
+      alignItems: 'flex-end',
+    },
+    time: {
+      fontSize: 12,
+      color: theme === 'dark' ? '#D4A5C0' : '#9E7B8E',
+      marginBottom: 4,
+      fontWeight: '500',
+    },
+    readStatus: {
+      fontSize: 12,
+      fontWeight: '600',
+      marginTop: 2,
+    },
+    emptyState: {
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingVertical: 60,
+    },
+    emptyStateIcon: {
+      width: 80,
+      height: 80,
+      borderRadius: 40,
+      backgroundColor: theme === 'dark' ? '#2A2335' : '#FFFFFF',
+      justifyContent: 'center',
+      alignItems: 'center',
+      marginBottom: 20,
+      borderWidth: 2,
+      borderColor: theme === 'dark' ? '#3D3147' : '#FFE4ED',
+    },
+    emptyStateEmoji: {
+      fontSize: 32,
+    },
+    emptyStateText: {
+      fontSize: 18,
+      marginBottom: 12,
+      color: theme === 'dark' ? '#FFB6D9' : '#C62368',
+      textAlign: 'center',
+      fontWeight: '600',
+    },
+    emptyStateSubtext: {
+      fontSize: 14,
+      color: theme === 'dark' ? '#D4A5C0' : '#9E7B8E',
+      textAlign: 'center',
+      lineHeight: 20,
+      paddingHorizontal: 20,
+    },
+    errorText: {
+      fontSize: 16,
+      marginBottom: 20,
+      textAlign: 'center',
+      color: theme === 'dark' ? '#FFB6D9' : '#C62368',
+      fontWeight: '500',
+    },
+    button: {
+      paddingHorizontal: 24,
+      paddingVertical: 14,
+      backgroundColor: theme === 'dark' ? '#B794F6' : '#FF6B9D',
+      borderRadius: 20,
+    },
+    buttonText: {
+      color: '#FFFFFF',
+      fontWeight: '700',
+      fontSize: 16,
+      letterSpacing: 0.5,
+    },
+    loadingContainer: {
+      alignItems: 'center',
+    },
+    loadingText: {
+      marginTop: 16,
+      fontSize: 15,
+      color: theme === 'dark' ? '#D4A5C0' : '#9E7B8E',
+      fontWeight: '500',
+    },
+    pregnancyIcon: {
+      width: 100,
+      height: 100,
+      borderRadius: 50,
+      backgroundColor: theme === 'dark' ? '#2A2335' : '#FFFFFF',
+      justifyContent: 'center',
+      alignItems: 'center',
+      marginBottom: 20,
+      borderWidth: 3,
+      borderColor: theme === 'dark' ? '#B794F6' : '#FFB6D9',
+    },
+    pregnancyIconText: {
+      fontSize: 40,
+    },
+   
+    deletingOverlay: {
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: 'rgba(0,0,0,0.1)',
+      borderRadius: 20,
+      justifyContent: 'center',
+      alignItems: 'center',
+      zIndex: 1,
+    },
+  });

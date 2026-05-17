@@ -80,19 +80,3 @@ Ejecutar el proyecto
 npx expo start
 npm start -c
 ```
-
-## 📄 Licencia
-
-Este proyecto está bajo **Licencia Propietaria**.  
-© 2025 Darlen Javier Díaz Urbina. Todos los derechos reservados.
-
-### Permisos:
--  Visualizar y descargar el código
--  Usar para fines educativos
--  Dar crédito al autor original
-
-### Restricciones:
--  Uso comercial
--  Modificación o creación de obras derivadas
--  Distribución sin autorización
--  Integración en proyectos cerrados
